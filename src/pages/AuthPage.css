@@ -1,0 +1,27 @@
+/* General page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffcccb; /* Light pink background */
+  }
+  
+  /* Container for the authentication page */
+  .auth-container {
+    display: flex;
+    flex-direction: column; /* Stack the forms vertically */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 30px; /* Space between the forms */
+  }
+  
+  /* Wrapper for individual forms */
+  .form-wrapper {
+    background-color: #080b0b; /* SKU blue background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 320px;
+  }
+  

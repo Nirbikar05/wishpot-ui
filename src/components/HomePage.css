@@ -1,0 +1,94 @@
+/* HomePage.css */
+
+/* Remove the default margin and padding on the body */
+body.home-page {
+    background-color: #f5f5dc; /* Creamy Brown */
+    margin: 0; /* Remove the default margin */
+    padding: 0; /* Remove the default padding */
+    height: 100%; /* Ensure it takes the full height */
+    display: block; /* Ensure the layout is block, not flex */
+  }
+  
+  /* Home Page Layout */
+  .home-page {
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack navbar and content vertically */
+    justify-content: flex-start; /* Align everything at the top */
+    padding-top: 0; /* Remove the padding that causes space at the top */
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: #ADD8E6; /* Lightish Blue */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 6vh; /* Navbar height */
+    padding: 0 20px; /* Padding inside navbar */
+  }
+  
+  /* Navbar links container */
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    width: 80%; /* Take up 80% of the navbar width */
+    justify-content:left;
+  }
+  
+  .navbar-nav li {
+    margin-right: 40px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #FF6347; /* Tomato color on hover */
+  }
+  
+  /* Login Button Styles */
+  .login-button {
+    background-color: #90EE90; /* Light Green */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    width: 5vw; /* Max width of 5% of the viewport width */
+    max-width: 150px; /* Optional: setting a max-width to avoid the button being too large */
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out; /* Smooth transition for any changes */
+  }
+  
+  .login-button:active {
+    transform: scale(0.95); /* Shrinks the button to 95% of its original size */
+  }
+  
+  /* Main Content */
+  .main-content {
+    text-align: center;
+    margin-top: 20px;
+    flex: 1; /* This allows the content to grow and fill remaining space */
+  }
+  
+  .main-content h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .main-content p {
+    font-size: 18px;
+    color: #555;
+  }
+  
